@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
 
 # SoundRecorder
 PRODUCT_PACKAGES += \
-    QtiSoundRecorder
+    SoundRecorder
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -207,21 +207,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemePicker
 
-# Device Personalization Services
+# Launcher3
 PRODUCT_PACKAGES += \
-    MatchmakerPrebuilt
-
-# Pixel Launcher
-PRODUCT_PACKAGES += \
-    NexusLauncherPrebuilt \
-    
-# WallpaperPicker
-PRODUCT_PACKAGES += \
-    WallpaperPickerPrebuilt
-
-# Screen recorder
-PRODUCT_PACKAGES += \
-    Recorder
+    Launcher3QuickStep
 
 # Versioning
 include vendor/reloaded/config/version.mk
