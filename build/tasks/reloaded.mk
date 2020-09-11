@@ -17,10 +17,12 @@
 
 RELOADED_TARGET_PACKAGE := $(PRODUCT_OUT)/$(RELOADED_VERSION).zip
 
+MD5 := prebuilts/build-tools/path/$(HOST_OS)-x86/md5sum
+
 .PHONY: reloaded
 reloaded: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(RELOADED_TARGET_PACKAGE)
-	$(hide) $(MD5SUM) $(RELOADED_TARGET_PACKAGE) > $(RELOADED_TARGET_PACKAGE).md5sum
+	$(hide) $(MD5) $(RELOADED_TARGET_PACKAGE) > $(RELOADED_TARGET_PACKAGE).md5sum
 	@echo ""
 	@echo -e ${CL_YLW}"════════════════════════════════════════════════════════════════════════════════"${CL_RST}
 	@echo -e ${CL_CYN}"Package zip: "${CL_MAG} $(RELOADED_TARGET_PACKAGE)                                 ${CL_RST}
