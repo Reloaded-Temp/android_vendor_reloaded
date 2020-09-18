@@ -25,3 +25,8 @@ define addVar
 endef
 
 $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
+
+# Qualcomm variables
+SOONG_CONFIG_NAMESPACES += aosp_vs_qva
+SOONG_CONFIG_aosp_vs_qva += aosp_or_qva
+SOONG_CONFIG_aosp_vs_qva_aosp_or_qva := qva
