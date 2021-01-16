@@ -12,9 +12,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.opa.eligible_device=true \
     ro.setupwizard.rotation_locked=true
 
-# Thank you, please drive thru!
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/reloaded/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
