@@ -21,6 +21,9 @@ type Product_variables struct {
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
+        Target_inputdispatcher_skip_event_key struct {
+		Cppflags []string
+	}
 	Target_process_sdk_version_override struct {
 		Cppflags []string
 	}
@@ -57,6 +60,7 @@ type ProductVariables struct {
 	Should_wait_for_qsee                  *bool   `json:",omitempty"`
 	Specific_camera_parameter_library     *string `json:",omitempty"`
 	Target_init_vendor_lib                *string `json:",omitempty"`
+        Target_inputdispatcher_skip_event_key *int    `json:",omitempty"`
 	Target_process_sdk_version_override   *string `json:",omitempty"`
 	Target_shim_libs                      *string `json:",omitempty"`
         Target_surfaceflinger_udfps_lib       *string `json:",omitempty"`
