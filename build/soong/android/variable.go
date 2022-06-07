@@ -12,6 +12,9 @@ type Product_variables struct {
 		Overrides   []string
 		Shared_libs []string
 	}
+        Needs_camera_boottime struct {
+		Cppflags []string
+	}
 	Should_wait_for_qsee struct {
 		Cflags []string
 	}
@@ -47,6 +50,7 @@ type ProductVariables struct {
 	Additional_gralloc_10_usage_bits      *string `json:",omitempty"`
 	Bootloader_message_offset             *int    `json:",omitempty"`
 	Has_legacy_camera_hal1                *bool   `json:",omitempty"`
+        Needs_camera_boottime                 *bool   `json:",omitempty"`
 	QTIAudioPath                          *string `json:",omitempty"`
 	QTIDisplayPath                        *string `json:",omitempty"`
 	QTIMediaPath                          *string `json:",omitempty"`
